@@ -1,26 +1,169 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS -->
+    <meta name="description" content="MCD Store">
+    <meta name="keywords" content="HTML, CSS, Sass, Bootstrap 5, E-commerce, Web Store, Brand, Mare Car Design">
+    <meta name="author" content="Marko Meseldžija">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="./css/main.css">
-    <title>Hello, world!</title>
+    <link rel="icon" type="icon/svg" href="./images/brand/mcd-store.svg">
+
+    <title>MCD | Store</title>
   </head>
-  <body>
-    <h1>Hello, world!</h1>
+  <body class="bg-light">
+    <header>
+      <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light" aria-label="Main navigation">
+        <div class="container-fluid p-0">
+          <a class="navbar-brand" href="#">
+            <img src="./images/brand/mcd-store.svg" width="30" alt="Logo">
+          </a>
+          <button class="custom-toggler navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class="navbar-collapse offcanvas-collapse bg-light" id="navbarsExampleDefault">
+            <ul class="navbar-nav me-auto ms-3 mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link d-inline-block border-bottom border-3 border-primary" aria-current="page" href="#">Dashboard</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Notifications</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Profile</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Switch account</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Settings</a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="search-box">
+                <label class="visually-hidden" for="inlineFormInputGroupSearch">Search</label>
+                <div class="input-group bg-light shadow rounded-3 d-flex">
+                  <input type="search" class="form-control bg-light rounded-end rounded-3 border-0" id="inlineFormInputGroupSearch" placeholder="Search" aria-label="Search">
+                  <a href="#" class="pe-auto align-self-center m-2 mx-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gray" class="bi bi-search align-self-center" viewBox="0 0 16 16">
+                      <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                    </svg>
+                  </a>
+                </div>  
+            </form>
+          </div>
+        </div>
+      </nav>
+      
+    </header>
+    <main>
+      <section class="mt-5 vh-100">
+        <div id="carouselExampleIndicators" class="carousel slide h-75" data-bs-ride="carousel">
+          <div class="carousel-indicators mb-5">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="text-center mb-5">
+            <h1 class="fw-bold">Buy great automotive art.</h1>
+            <p>Get your favorite car drawing or illustration for a great price!</p>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="card custom-card text-center bg-light shadow rounded-3 border-0 w-75 my-5 mx-auto p-3">
+                <img src="./images/mcd/illustrations/Totota-Supra.jpg" class="card-img-top img-fluid shadow rounded-3" alt="">
+                <div class="card-body pb-0 ps-0 row">
+                  <div class="text-start pl-0 col-auto me-auto">
+                    <h5 class="card-title mb-1">Toyota Supra</h5>
+                    <h6 class="card-text text-muted">Illustrations</h6>
+                  </div>
+                  <a role="button" href="#" class="btn col-auto d-flex justify-content-center align-items-center text-uppercase spaced-text shadow rounded-3">
+                    <h6 class="d-inline mb-0">$5</h6>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-right d-inline" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card custom-card text-center bg-light shadow rounded-3 border-0 w-75 my-5 mx-auto p-3">
+                <img src="./images/mcd/sketches/Mercedes-AMG-One.jpg" class="card-img-top img-fluid shadow rounded-3" alt="">
+                <div class="card-body pb-0 ps-0 row">
+                  <div class="text-start pl-0 col-auto me-auto">
+                    <h5 class="card-title mb-1">Mercedes AMG One</h5>
+                    <h6 class="card-text text-muted">Sketches</h6>
+                  </div>
+                  <a role="button" href="#" class="btn col-auto d-flex justify-content-center align-items-center text-uppercase spaced-text shadow rounded-3">
+                    <h6 class="d-inline mb-0">$5</h6>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-right d-inline" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card custom-card text-center bg-light shadow rounded-3 border-0 w-75 my-5 mx-auto p-3">
+                <img src="./images/mcd/visual-tuning/Opel Astra H GTC Tuning.png" class="card-img-top img-fluid shadow rounded-3" alt="">
+                <div class="card-body pb-0 ps-0 row">
+                  <div class="text-start pl-0 col-auto me-auto">
+                    <h5 class="card-title mb-1">Opel Astra H GTC</h5>
+                    <h6 class="card-text text-muted">Visual Tuning</h6>
+                  </div>
+                  <a role="button" href="#" class="btn col-auto d-flex justify-content-center align-items-center text-uppercase spaced-text shadow rounded-3">
+                    <h6 class="d-inline mb-0">$5</h6>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-right d-inline" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="gray" class="bi bi-chevron-compact-down d-block m-auto rounded-circle shadow p-2" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z"/>
+          </svg>
+        </a>
+        <!-- <h1>Test</h1>
+        <p>Testing</p>
+        <h1>Test</h1>
+        <p>Testing</p>
+        <h1>Test</h1>
+        <p>Testing</p>
+        <h1>Test</h1>
+        <p>Testing</p>
+        <h1>Test</h1>
+        <p>Testing</p>
+        <h1>Test</h1>
+        <p>Testing</p> -->
 
-    <!-- Optional JavaScript; choose one of the two! -->
+        <!-- <a role="button" class="btn shadow btn-lg rounded-3 fs-6 text-uppercase spaced-text">Primary</a> -->
+      </section>
+    </main>
+    <footer>
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    -->
+    <script src="./js/offcanvas.js"></script>
   </body>
 </html>
