@@ -1,7 +1,9 @@
 @import "../node_modules/bootstrap/scss/functions";
 
-@import './variables';
-@import './offcanvas-navbar/offcanvas';
+@import './partials/variables';
+@import './partials/custom-utilities';
+@import './partials/offcanvas';
+@import './partials/checkout';
 
 // Configuration
 @import "../node_modules/bootstrap/scss/variables";
