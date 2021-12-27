@@ -4,20 +4,12 @@ $font-size-base: 1rem;
 $h5-font-size: $font-size-base;
 $h6-font-size: $font-size-base * .8;
 $font-size-lg: $h6-font-size;
-
-.spaced-text {
-    letter-spacing: 0.15rem;
-}
-
-a {
-    text-decoration: none !important;
-}
+$nav-link-font-size: $font-size-base;
 
 //Button
 $input-btn-padding-y-lg: .7rem;
 $input-btn-padding-x-lg: 1.2rem;
 $input-btn-font-size-lg: $font-size-lg !default;
-
 
 //Colors
 $primary: hsl(212, 66%, 45%);
@@ -46,94 +38,3 @@ $border-radius-lg: $border-radius;
 $card-bg: $light;
 $list-group-bg: $light;
 $dropdown-bg: $light;
-
-:root {
-    scroll-padding: 60px;
-}
-
-input,
-.form-select {
-    box-shadow: $box-shadow;
-}
-
-
-body, 
-.navbar {
-    padding-inline: 5vw;
-}
-
-.nav {
-    text-align: start !important;
-}
-
-.hero {
-    height: calc(100vh - 60px);
-}
-
-.custom-card {
-    width: 350px;
-    max-width: 350px;
-}
-
-.pressed {
-    box-shadow: inset 20px 20px 60px #c8c8c8,
-            inset -20px -20px 60px #ffffff;
-}
-
-%card-image {
-    height: 200px;
-    border-radius: $border-radius;
-    background-size: cover;
-    background-position: center;
-}
-
-.card-image {
-    @extend %card-image;
-
-    //Illustrations
-    &-supra {
-        background-image: url('/images/mcd/illustrations/Totota-Supra.jpg');
-    }
-    &-verso {
-        background-image: url('/images/mcd/illustrations/Toyota-Corrola-Verso-2010.jpg');
-    }
-
-    //Sketches
-    &-amg {
-        background-image: url('/images/mcd/sketches/Mercedes-AMG-One.jpg');
-    }
-    &-ares {
-        background-image: url('/images/mcd/sketches/2020-Ares-Design-S-Project.jpg');
-    }
-    &-mcqueen {
-        background-image: url('/images/mcd/sketches/Lightning-McQueen.jpg');
-    }
-
-    //Visual Tuning
-    &-gtc {
-        background-image: url('/images/mcd/visual-tuning/Opel-Astra-H-GTC-Tuning.png');
-    }
-    &-bmw-320 {
-        background-image: url('/images/mcd/visual-tuning/BMW-320.jpg');
-    }
-    &-celica {
-        background-image: url('/images/mcd/visual-tuning/Toyota-Celica-Visual-Tuning.jpg');
-    }
-}
-
-@media (min-width: 992px) {
-.hero-text,
-.carousel {
-    width: 50vw;
-}
-}
-
-// Footer
-.b-example-divider {
-    height: 1px;
-    background-color: rgba(0, 0, 0, .1);
-    border: solid rgba(0, 0, 0, .15);
-    border-width: 1px 0;
-    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-  }
-

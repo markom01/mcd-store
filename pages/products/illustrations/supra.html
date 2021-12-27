@@ -16,24 +16,27 @@
       href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/main.css" />
-    <link rel="icon" type="icon/svg" href="./images/brand/mcd-store.svg" />
+    <link rel="stylesheet" href="../../../css/main.css" />
+    <link
+      rel="icon"
+      type="icon/svg"
+      href="../../../images/brand/mcd-store.svg"
+    />
 
-    <title>Home | MCD</title>
+    <title>Toyota Supra - Illustration | MCD</title>
   </head>
 
+  <!-- Header -->
   <body>
-    <!-- Header -->
-
-    <header>
+    <header class="fixed-top">
       <div id="top"></div>
       <nav
-        class="navbar navbar-expand-lg fixed-top navbar-light bg-body"
+        class="navbar navbar-expand-lg navbar-light bg-body"
         aria-label="Main navigation"
       >
         <div class="container-fluid p-0">
           <a class="navbar-brand" href="#top">
-            <img src="./images/brand/mcd-store.svg" width="30" alt="Logo" />
+            <img src="../../../images/brand/mcd-store.svg" width="30" alt="Logo" />
           </a>
 
           <button
@@ -123,308 +126,120 @@
           </a>
         </div>
       </nav>
+      <nav
+        class="bg-body p-2 px-4 container-fluid"
+        aria-label="breadcrumb"
+      >
+        <ol class="breadcrumb mb-0">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Products</a></li>
+          <li class="breadcrumb-item active" aria-current="page">
+            Toyota Supra
+          </li>
+        </ol>
+      </nav>
     </header>
+
+
     <main>
-      <!-- Hero Section -->
 
-      <section class="hero">
-        <div class="my-5 d-lg-flex flex-lg-equal w-100 h-75">
-          <div class="hero-text text-center text-lg-start my-auto px-lg-5">
-            <h1 class="fw-bold">Buy great automotive art.</h1>
-            <p class="mb-5 lead">
-              Get your favorite car drawing or illustration for a great price!
-            </p>
-            <button
-              href=""
-              role="button"
-              class="
-                btn btn-primary
-                shadow
-                btn-lg
-                fs-6
-                text-uppercase
-                spaced-text
-              "
+      <div class="row  mt-5 pt-5 justify-content-between">
+        <div
+          id="carouselExampleControls"
+          class="carousel slide col-md-6 mb-4"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner d-flex py-5 h-100">
+            <div
+              class="carousel-item active align-self-center m-lg-5 px-5 px-lg-3"
             >
-              Buy Now
-            </button>
-            <button
-              href=""
-              role="button"
-              class="btn shadow btn-lg text-uppercase spaced-text mx-4"
-            >
-              Explore
-            </button>
-          </div>
-
-          <div
-            id="carouselExampleIndicators"
-            class="carousel slide"
-            data-bs-ride="carousel"
-          >
-            <div class="carousel-indicators mb-0">
-              <button
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide-to="0"
-                class="active"
-                aria-current="true"
-                aria-label="Slide 1"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide-to="1"
-                aria-label="Slide 2"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide-to="2"
-                aria-label="Slide 3"
-              ></button>
+              <div
+                class="image product-image image-supra shadow"
+              ></div>
             </div>
-            <div class="carousel-inner d-flex h-100">
-              <div class="carousel-item active align-self-center">
-                <div
-                  class="
-                    card
-                    custom-card
-                    text-center
-                    shadow
-                    border-0
-                    w-75
-                    mx-auto
-                    my-5
-                    p-3
-                  "
-                >
-                  <div class="image card-image image-supra shadow"></div>
-                  <div class="card-body pb-0 ps-0 row">
-                    <div class="text-start pl-0 col-8 me-auto">
-                      <h5 class="card-title mb-1 text-truncate">
-                        Toyota Supra
-                      </h5>
-                      <h6 class="card-text text-muted">Illustrations</h6>
-                    </div>
-                    <a
-                      role="button"
-                      href="#"
-                      class="
-                        btn
-                        col-auto
-                        d-flex
-                        justify-content-center
-                        align-items-center
-                        text-uppercase
-                        spaced-text
-                        shadow
-                      "
-                    >
-                      <h6 class="d-inline mb-0">$10</h6>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        fill="currentColor"
-                        class="bi bi-chevron-compact-right d-inline"
-                        viewBox="0 0 16 16"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z"
-                        />
-                      </svg>
-                    </a>
-                  </div>
-                </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <div class="col-md-6 col-lg-5 py-4 p-lg-2">
+          <div class="container shadow rounded p-4">
+            <h2>Toyota Supra</h2>
+            <h5 class="text-muted mb-4 mb-lg-0">Illustrations</h5>
+            <div class="row my-4 my-lg-5">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-file-earmark-arrow-down col-auto gx-3"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8.5 6.5a.5.5 0 0 0-1 0v3.793L6.354 9.146a.5.5 0 1 0-.708.708l2 2a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0-.708-.708L8.5 10.293V6.5z"
+                />
+                <path
+                  d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z"
+                />
+              </svg>
+              <h6 class="col-auto gx-0">Digital Download</h6>
+            </div>
+            <div class="row px-2 align-items-center">
+              <div class="col-4 px-0">
+                <label for="quantity" class="h6">Quantity:</label>
+                <input
+                  type="number"
+                  class="col-5 border-0 bg-body shadow rounded mx-1 p-1 px-2"
+                  id="quantity"
+                  name="quantity"
+                  min="1"
+                  max="10"
+                />
               </div>
-              <div class="carousel-item align-self-center">
-                <div
-                  class="
-                    card
-                    custom-card
-                    text-center
-                    shadow
-                    border-0
-                    w-75
-                    mx-auto
-                    my-5
-                    p-3
-                  "
+              <div class="col-auto px-0 ms-auto d-flex justify-content-end">
+                <h5 class="d-inline mb-0 me-1 align-self-center text-primary">
+                  $ 5.00
+                </h5>
+                <button
+                  href=""
+                  role="button"
+                  class="btn btn-lg shadow mx-1 text-uppercase spaced-text"
                 >
-                  <div class="image card-image image-amg shadow"></div>
-                  <div class="card-body pb-0 ps-0 row">
-                    <div class="text-start pl-0 col-8 me-auto">
-                      <h5 class="card-title mb-1 text-truncate">
-                        Mercedes AMG One
-                      </h5>
-                      <h6 class="card-text text-muted">Sketches</h6>
-                    </div>
-                    <a
-                      role="button"
-                      href="#"
-                      class="
-                        btn
-                        col-auto
-                        d-flex
-                        justify-content-center
-                        align-items-center
-                        text-uppercase
-                        spaced-text
-                        shadow
-                      "
-                    >
-                      <h6 class="d-inline mb-0">$5</h6>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        fill="currentColor"
-                        class="bi bi-chevron-compact-right d-inline"
-                        viewBox="0 0 16 16"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z"
-                        />
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item align-self-center">
-                <div
-                  class="
-                    card
-                    custom-card
-                    text-center
-                    shadow
-                    border-0
-                    w-75
-                    mx-auto
-                    my-5
-                    p-3
-                  "
-                >
-                  <div class="image card-image image-gtc shadow"></div>
-                  <div class="card-body pb-0 ps-0 row">
-                    <div class="text-start pl-0 col-8 me-auto">
-                      <h5 class="card-title mb-1 text-truncate">
-                        Opel Astra H GTC
-                      </h5>
-                      <h6 class="card-text text-muted">Visual Tuning</h6>
-                    </div>
-                    <a
-                      role="button"
-                      href="#"
-                      class="
-                        btn
-                        col-auto
-                        d-flex
-                        justify-content-center
-                        align-items-center
-                        text-uppercase
-                        spaced-text
-                        shadow
-                      "
-                    >
-                      <h6 class="d-inline mb-0">$5</h6>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        fill="currentColor"
-                        class="bi bi-chevron-compact-right d-inline"
-                        viewBox="0 0 16 16"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z"
-                        />
-                      </svg>
-                    </a>
-                  </div>
-                </div>
+                  Add to cart
+                </button>
               </div>
             </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button>
           </div>
         </div>
-        <a class="d-block text-center" href="#products">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="50"
-            height="50"
-            fill="gray"
-            class="bi bi-chevron-compact-down rounded-circle shadow p-2"
-            viewBox="0 0 16 16"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z"
-            />
-          </svg>
-        </a>
-      </section>
 
-      <!-- Products -->
-
-      <section class="mb-5">
-        <div id="products"></div>
-        <div class="row">
-          <h2 class="col-5">Products</h2>
-          <a
-            href=""
-            class="
-              col-auto
-              ms-auto
-              d-flex
-              align-items-center
-              justify-content-end
-              shadow
-            "
-          >
-            <h6 class="mb-0 text-grey">Show More</h6>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              class="bi bi-chevron-compact-right d-inline"
-              viewBox="0 0 16 16"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z"
-              />
-            </svg>
-          </a>
+        <div>
+          <h3 class="mb-3">Details</h3>
+          <p class="mb-5">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+            excepturi architecto repudiandae, fuga velit quia soluta sequi,
+            fugit qui sit rerum corporis et eligendi laudantium, amet voluptas
+            exercitationem aspernatur similique?
+          </p>
         </div>
-        <div class="row justify-content-center">
+
+        <h3 class="mb-3">Similar Products</h3>
+
+        <div class="row container justify-content-center">
           <div class="col-12 col-lg-6 col-xl-4">
             <div
               class="
@@ -582,163 +397,8 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-lg-6 col-xl-4">
-            <div
-              class="
-                card
-                custom-card
-                text-center
-                shadow
-                border-0
-                mx-auto
-                my-5
-                p-3
-              "
-            >
-              <div class="image card-image image-supra shadow"></div>
-              <div class="card-body pb-0 ps-0 row">
-                <div class="text-start pl-0 col-8 me-auto">
-                  <h5 class="card-title mb-1 text-truncate">Toyota Supra</h5>
-                  <h6 class="card-text text-muted">Illustrations</h6>
-                </div>
-                <a
-                  role="button"
-                  href="./pages/products/illustrations/supra.html"
-                  class="
-                    btn
-                    col-auto
-                    d-flex
-                    justify-content-center
-                    align-items-center
-                    text-uppercase
-                    spaced-text
-                    shadow
-                  "
-                >
-                  <h6 class="d-inline mb-0">$5</h6>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    class="bi bi-chevron-compact-right d-inline"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-lg-6 col-xl-4">
-            <div
-              class="
-                card
-                custom-card
-                text-center
-                shadow
-                border-0
-                mx-auto
-                my-5
-                p-3
-              "
-            >
-              <div class="image card-image image-mcqueen shadow"></div>
-              <div class="card-body pb-0 ps-0 row">
-                <div class="text-start pl-0 col-8 me-auto">
-                  <h5 class="card-title mb-1 text-truncate">
-                    Lightning McQueen
-                  </h5>
-                  <h6 class="card-text text-muted">Sketches</h6>
-                </div>
-                <a
-                  role="button"
-                  href="#"
-                  class="
-                    btn
-                    col-auto
-                    d-flex
-                    justify-content-center
-                    align-items-center
-                    text-uppercase
-                    spaced-text
-                    shadow
-                  "
-                >
-                  <h6 class="d-inline mb-0">$5</h6>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    class="bi bi-chevron-compact-right d-inline"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-lg-6 col-xl-4">
-            <div
-              class="
-                card
-                custom-card
-                text-center
-                shadow
-                border-0
-                mx-auto
-                my-5
-                p-3
-              "
-            >
-              <div class="image card-image image-celica shadow"></div>
-              <div class="card-body pb-0 ps-0 row">
-                <div class="text-start pl-0 col-8 me-auto">
-                  <h5 class="card-title mb-1 text-truncate">Toyota Celica</h5>
-                  <h6 class="card-text text-muted">Visual Tuning</h6>
-                </div>
-                <a
-                  role="button"
-                  href="#"
-                  class="
-                    btn
-                    col-auto
-                    d-flex
-                    justify-content-center
-                    align-items-center
-                    text-uppercase
-                    spaced-text
-                    shadow
-                  "
-                >
-                  <h6 class="d-inline mb-0">$5</h6>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    class="bi bi-chevron-compact-right d-inline"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z"
-                    />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
         </div>
-      </section>
+      </div>
     </main>
 
     <!-- Footer -->
@@ -817,7 +477,7 @@
       <div class="b-example-divider"></div>
       <div class="d-flex justify-content-between p-1 m-1 border-top">
         <img
-          src="./images/brand/MCD-Logo.png"
+          src="../../../images/brand/MCD-Logo.png"
           width="50"
           height="50"
           class="rounded-circle me-3"
@@ -881,13 +541,12 @@
       </div>
     </footer>
 
-    <!-- JS -->
-
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
-    <script src="./js/main.js"></script>
+    <script src="../../../js/main.js"></script>
+
   </body>
 </html>

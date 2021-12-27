@@ -1,0 +1,109 @@
+:root {
+  scroll-padding: 60px;
+}
+
+.spaced-text {
+  letter-spacing: 0.15rem;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+input,
+.form-select {
+  box-shadow: $box-shadow;
+}
+
+body, 
+.navbar {
+  padding-inline: 5vw;
+}
+
+.nav {
+  text-align: start !important;
+}
+
+.custom-breadcrumb {
+  position: fixed;
+  top: 58px;
+}
+
+.hero {
+  height: calc(100vh - 60px);
+}
+
+.custom-card {
+  width: 350px;
+  max-width: 350px;
+}
+
+.pressed {
+  box-shadow: inset 20px 20px 60px #c8c8c8,
+          inset -20px -20px 60px #ffffff;
+}
+
+%image {
+  border-radius: $border-radius;
+  background-size: cover;
+  background-position: center;
+}
+
+.image {
+  @extend %image;
+
+  //Illustrations
+  &-supra {
+      background-image: url('/images/mcd/illustrations/Totota-Supra.jpg');
+  }
+  &-verso {
+      background-image: url('/images/mcd/illustrations/Toyota-Corrola-Verso-2010.jpg');
+  }
+
+  //Sketches
+  &-amg {
+      background-image: url('/images/mcd/sketches/Mercedes-AMG-One.jpg');
+  }
+  &-ares {
+      background-image: url('/images/mcd/sketches/2020-Ares-Design-S-Project.jpg');
+  }
+  &-mcqueen {
+      background-image: url('/images/mcd/sketches/Lightning-McQueen.jpg');
+  }
+
+  //Visual Tuning
+  &-gtc {
+      background-image: url('/images/mcd/visual-tuning/Opel-Astra-H-GTC-Tuning.png');
+  }
+  &-bmw-320 {
+      background-image: url('/images/mcd/visual-tuning/BMW-320.jpg');
+  }
+  &-celica {
+      background-image: url('/images/mcd/visual-tuning/Toyota-Celica-Visual-Tuning.jpg');
+  }
+}
+
+.card-image {
+  height: 200px;
+}
+
+.product-image {
+  min-height: 200px;
+  max-height: 350px;
+}
+
+@media (min-width: 992px) {
+.hero-text,
+.carousel {
+  width: 50vw;
+}
+}
+
+// Footer
+.b-example-divider {
+  height: 1px;
+  background-color: rgba(0, 0, 0, .1);
+  border: solid rgba(0, 0, 0, .15);
+  border-width: 1px 0;
+  box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
