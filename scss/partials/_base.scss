@@ -1,5 +1,5 @@
 :root {
-  scroll-padding: 60px;
+  scroll-padding: 80px;
 }
 
 .spaced-text {
@@ -15,6 +15,11 @@ input,
   box-shadow: $box-shadow;
 }
 
+.custom-textarea {
+  resize: none;
+  height: 300px;
+}
+
 body, 
 .navbar {
   padding-inline: 5vw;
@@ -24,9 +29,9 @@ body,
   text-align: start !important;
 }
 
-.custom-breadcrumb {
-  position: fixed;
-  top: 58px;
+.custom-split-button {
+  width: 100px;
+  height:50px;
 }
 
 .hero {
@@ -88,15 +93,42 @@ body,
 }
 
 .product-image {
-  min-height: 200px;
-  max-height: 350px;
+  min-width: 250px;
+  min-height: 225px;
 }
+
+.custom-img-wrapper {
+  padding: 30px;
+
+  .custom-image-row {
+    transition: 0.5s;
+    &:hover {
+      transform: scale(1.1);
+      z-index: 2;
+    }
+    margin-left: -50px;
+    aspect-ratio: 1;
+    width: 125px;
+    background-color: white;
+  
+    @media (min-width:992px) {
+      width:200px;
+      margin-left: -75px;
+    }
+  }
+
+  .custom-profile-image {
+    margin-left: 0px;
+  }
+}
+
+
 
 @media (min-width: 992px) {
 .hero-text,
 .carousel {
   width: 50vw;
-}
+  }
 }
 
 // Footer
