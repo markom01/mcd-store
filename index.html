@@ -23,10 +23,11 @@
 
   <header>
     <div id="top"></div>
-    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-body" aria-label="Main navigation">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-body shadow-sm" aria-label="Main navigation">
       <div class="container-fluid p-0">
-        <a class="navbar-brand" href="#top">
-          <img src="./images/brand/mcd-store.svg" width="30" alt="Logo" />
+        <a class="navbar-brand row align-items-center" href="#top">
+          <img src="./images/brand/mcd-store.svg" class="col p-0" width="40" height="40" alt="Logo" />
+          <h3 class="col mb-0 custom-text-hidden">MCD Store</h3>
         </a>
 
         <button class="custom-toggler navbar-toggler p-1 border-0" type="button" id="navbarSideCollapse"
@@ -34,7 +35,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="navbar-collapse offcanvas-collapse bg-body" id="navbarsExampleDefault">
-          <ul class="navbar-nav me-auto ms-3 my-2 my-lg-0">
+          <ul class="navbar-nav mx-auto my-2 my-lg-0">
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="dropdown-products" data-bs-toggle="dropdown"
                 aria-expanded="false">Products</a>
@@ -52,7 +53,7 @@
               <a class="nav-link" href="./pages/FAQ.html">FAQ</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="./pages/contact.html">Contact</a>
             </li>
           </ul>
 
@@ -85,14 +86,14 @@
     <!-- Hero Section -->
 
     <section class="hero">
-      <div class="my-5 d-lg-flex flex-lg-equal w-100 h-75">
-        <div class="hero-text text-center text-lg-start my-auto px-lg-5">
-          <h1 class="fw-bold">Buy great automotive art.</h1>
+      <div class="my-5 row h-75">
+        <div class="col-12 col-lg-6 text-center text-lg-start my-auto px-lg-5">
+          <h1 class="fw-bold custom-text-gradient">Buy great automotive art.</h1>
           <p class="mb-5 lead">
             Get your favorite car drawing or illustration for a great price!
           </p>
           <a href="" class="
-                btn btn-primary
+                btn bg-gradient text-white
                 shadow
                 btn-lg
                 fs-6
@@ -100,13 +101,13 @@
                 spaced-text
               ">
             Buy Now
-        </a>
+          </a>
           <a href="" class="btn text-primary shadow btn-lg text-uppercase spaced-text mx-4">
             Explore
           </a>
         </div>
 
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleIndicators" class="col-12 col-lg-6 carousel slide" data-bs-ride="carousel">
           <div class="carousel-indicators mb-0">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
               aria-current="true" aria-label="Slide 1"></button>
@@ -137,7 +138,7 @@
                     <h6 class="card-text text-muted">Illustrations</h6>
                   </div>
                   <a href="#" class="
-                        btn text-primary
+                        btn stretched-link text-primary
                         col-auto
                         d-flex
                         justify-content-center
@@ -177,7 +178,7 @@
                     <h6 class="card-text text-muted">Sketches</h6>
                   </div>
                   <a href="#" class="
-                        btn text-primary
+                        btn stretched-link text-primary
                         col-auto
                         d-flex
                         justify-content-center
@@ -217,7 +218,7 @@
                     <h6 class="card-text text-muted">Visual Tuning</h6>
                   </div>
                   <a href="#" class="
-                        btn text-primary
+                        btn stretched-link text-primary
                         col-auto
                         d-flex
                         justify-content-center
@@ -301,7 +302,7 @@
                 <h6 class="card-text text-muted">Visual Tuning</h6>
               </div>
               <a href="#" class="
-                    btn text-primary
+                    btn stretched-link text-primary
                     col-auto
                     d-flex
                     justify-content-center
@@ -340,7 +341,7 @@
                 <h6 class="card-text text-muted">Illustrations</h6>
               </div>
               <a href="#" class="
-                    btn text-primary
+                    btn stretched-link text-primary
                     col-auto
                     d-flex
                     justify-content-center
@@ -377,7 +378,7 @@
                 <h6 class="card-text text-muted">Visual Tuning</h6>
               </div>
               <a href="#" class="
-                    btn text-primary
+                    btn stretched-link text-primary
                     col-auto
                     d-flex
                     justify-content-center
@@ -414,7 +415,9 @@
                 <h6 class="card-text text-muted">Illustrations</h6>
               </div>
               <a href="./pages/products/illustrations/supra.html" class="
-                    btn text-primary
+                    btn
+                    stretched-link 
+                    text-primary
                     col-auto
                     d-flex
                     justify-content-center
@@ -453,7 +456,7 @@
                 <h6 class="card-text text-muted">Sketches</h6>
               </div>
               <a href="#" class="
-                    btn text-primary
+                    btn stretched-link text-primary
                     col-auto
                     d-flex
                     justify-content-center
@@ -490,7 +493,7 @@
                 <h6 class="card-text text-muted">Visual Tuning</h6>
               </div>
               <a href="#" class="
-                    btn text-primary
+                    btn stretched-link text-primary
                     col-auto
                     d-flex
                     justify-content-center
@@ -554,30 +557,34 @@
         <div class="my-5 mt-md-0">
           <h4>Subscribe to our newsletter</h4>
           <p>Monthly digest of whats new and exciting from us.</p>
-          <form class="d-flex w-100 w-md-50 gap-2 card">
-            <div class="input-group">
-              <label for="newsletter1" class="visually-hidden">Email address</label>
-              <input id="newsletter1" type="text" class="form-control rounded-start" placeholder="Email address" />
-              <button class="btn btn-secondary" type="button">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                  class="bi bi-chevron-compact-right" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd"
-                    d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z" />
-                </svg>
-              </button>
+          <form class="rounded row px-2">
+            <div class="col-9 px-0 shadow rounded-0 rounded-start">
+              <div class="form-floating">
+                <input id="newsletter1" type="text" class="form-control shadow-none" placeholder="Email address" />
+                <label for="newsletter1">Email address</label>
+              </div>
             </div>
+            <button class="btn bg-gradient text-white rounded-0 rounded-end col-auto" type="button">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-chevron-compact-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z" />
+              </svg>
+            </button>
           </form>
         </div>
       </div>
     </div>
 
-    <div class="b-example-divider"></div>
-    <div class="d-flex justify-content-between p-1 m-1 border-top">
-      <img src="./images/brand/mcd-logo.svg" width="50" height="50" class="rounded-circle me-3"
-        alt="Mare Car Design Logo" />
+    <hr>
+    <div class="d-flex justify-content-between p-1 m-1 border-top mb-4 mb-md-0">
+      <a href="https://marecardesign.netlify.app" target="_blank" class="rounded-circle">
+        <img src="./images/brand/mcd-logo.svg" width="50" height="50" alt="Mare Car Design Logo" />
+      </a>
       <div class="d-flex flex-column">
-        <a href="https://marecardesign.netlify.app" target="_blank">&copy; 2021 Mare Car Design</a>
-        <ul class="list-unstyled d-flex ms-auto">
+        <a href="https://marecardesign.netlify.app" target="_blank" class="custom-text-gradient">&copy; 2021 Mare Car
+          Design</a>
+        <ul class="list-unstyled d-flex ms-auto mb-0">
           <li>
             <a href="https://instagram.com/marecardesign" target="_blank">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram"
@@ -608,12 +615,19 @@
         </ul>
       </div>
     </div>
+    <h6 class="text-center mb-0">
+      Made with <span class="custom-text-gradient">&#10084;</span> by
+      <a href="https://marko-meseldzija.netlify.app" target="_blank" class="custom-text-gradient">Marko Meseldžija
+    </h6>
+    </h6>
   </footer>
 
   <!-- JS -->
 
-  <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="./js/main.js"></script>
+  <script src="js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

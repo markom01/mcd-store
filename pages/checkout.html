@@ -23,7 +23,7 @@
   <div class="container">
     <main>
       <div class="pt-5 text-center">
-        <h1>Checkout</h1>
+        <h1 class="custom-text-gradient">Checkout</h1>
       </div>
 
       <div class="row p-3 g-5 mb-5 rounded">
@@ -59,16 +59,22 @@
             </li>
           </ul>
 
-          <form class="card">
-            <div class="input-group">
-              <input type="text" class="form-control" placeholder="Promo code" />
-              <button type="submit" class="btn btn-secondary">Redeem</button>
+          <form name="Coupon" class="rounded row px-3" data-netlify="true">
+            <div class="col-9 col-md-8 col-xl-9 px-0 shadow rounded-0 rounded-start">
+              <div class="form-floating">
+                <input type="text" class="form-control shadow-none" id="promo-code" placeholder="Promo code">
+                <label for="promo-code">Promo code</label>
+              </div>
+            </div>
+            <button type="submit" class="btn bg-gradient text-white rounded-0 rounded-end col-3 col-md-4 col-xl-3">Redeem</button>
+            <div class="valid-feedback">
+              Looks good!
             </div>
           </form>
         </div>
         <div class="col-md-7 col-lg-8 mb-5">
           <h4 class="mb-3">Personal Information</h4>
-          <form class="needs-validation" novalidate>
+          <form name="Checkout" data-netlify="true">
             <div class="row g-3">
               <div class="form-floating mb-3 col-lg-6">
                 <input type="text" class="form-control" id="f-name" placeholder="First Name" required>
@@ -209,7 +215,7 @@
 
             <hr class="my-4" />
 
-            <button class="w-100 btn btn-primary btn-lg" type="submit">
+            <button class="w-100 btn bg-gradient text-white btn-lg" type="submit">
               Continue to checkout
             </button>
           </form>
@@ -218,8 +224,8 @@
     </main>
   </div>
 
-  <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <script src="../js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 
 </html>
