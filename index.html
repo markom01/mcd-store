@@ -21,73 +21,71 @@
 <body>
   <!-- Header -->
 
-  <header>
+  <header class="fixed-top shadow-sm">
     <div id="top"></div>
-    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-body shadow-sm" aria-label="Main navigation">
-      <div class="container-fluid p-0">
-        <a class="navbar-brand row align-items-center" href="#top">
-          <img src="./images/brand/mcd-store.svg" class="col p-0" width="40" height="40" alt="Logo" />
-          <h3 class="col mb-0 custom-text-hidden">MCD Store</h3>
-        </a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-body py-2 py-md-3 custom-header row row-cols-auto" aria-label="Main navigation">
+      <a class="d-flex align-items-center custom-animation-fourth col" href="#top">
+        <img src="./images/brand/mcd-store.svg" class="p-0" width="40" height="40" alt="Logo" />
+        <h3 class="ms-md-1 mb-0 d-inline custom-text-hidden">MCD Store</h3>
+      </a>
 
-        <button class="custom-toggler navbar-toggler p-1 border-0" type="button" id="navbarSideCollapse"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="navbar-collapse offcanvas-collapse bg-body" id="navbarsExampleDefault">
-          <ul class="navbar-nav mx-auto my-2 my-lg-0">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="dropdown-products" data-bs-toggle="dropdown"
-                aria-expanded="false">Products</a>
-              <ul class="dropdown-menu shadow border-0 mb-2 mb-lg-0" aria-labelledby="dropdown-products">
-                <li><a class="dropdown-item" href="#">Wrap Designs</a></li>
-                <li><a class="dropdown-item" href="#">Illustrations</a></li>
-                <li><a class="dropdown-item" href="#">Sketches</a></li>
-                <li><a class="dropdown-item" href="#">Visual Tuning</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./pages/about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./pages/FAQ.html">FAQ</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./pages/contact.html">Contact</a>
-            </li>
-          </ul>
+      <button class="custom-toggler navbar-toggler p-1 border-0 custom-animation-fourth col" type="button" id="navbarSideCollapse"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse offcanvas-collapse bg-body col" id="navbarsExampleDefault">
+        <ul class="navbar-nav mx-auto my-2 my-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown-products" data-bs-toggle="dropdown"
+              aria-expanded="false">Products</a>
+            <ul class="dropdown-menu shadow border-0 mb-2 mb-lg-0" aria-labelledby="dropdown-products">
+              <li><a class="dropdown-item" href="#">Wrap Designs</a></li>
+              <li><a class="dropdown-item" href="#">Illustrations</a></li>
+              <li><a class="dropdown-item" href="#">Sketches</a></li>
+              <li><a class="dropdown-item" href="#">Visual Tuning</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/FAQ.html">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/contact.html">Contact</a>
+          </li>
+        </ul>
 
-          <form class="search-box mt-3 me-lg-2 mt-lg-0">
-            <label class="visually-hidden" for="inlineFormInputGroupSearch">Search</label>
-            <div class="input-group rounded-3 shadow custom-form-field d-flex">
-              <input type="search" class="form-control border-0" id="inlineFormInputGroupSearch" placeholder="Search"
-                aria-label="Search" />
-              <a href="#" class="align-self-center m-2 mx-3">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gray" class="bi bi-search"
-                  viewBox="0 0 16 16">
-                  <path
-                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-                </svg>
-              </a>
-            </div>
-          </form>
-        </div>
-        <a href="./pages/checkout.html">
-          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart p-1"
-            viewBox="0 0 16 16">
-            <path
-              d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
-          </svg>
-        </a>
+        <form class="search-box mt-3 me-lg-2 mt-lg-0">
+          <label class="visually-hidden" for="inlineFormInputGroupSearch">Search</label>
+          <div class="input-group rounded-3 shadow custom-form-field d-flex">
+            <input type="search" class="form-control border-0" id="inlineFormInputGroupSearch" placeholder="Search"
+              aria-label="Search" />
+            <a href="#" class="align-self-center m-2 mx-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gray" class="bi bi-search"
+                viewBox="0 0 16 16">
+                <path
+                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+              </svg>
+            </a>
+          </div>
+        </form>
       </div>
+      <a href="./pages/checkout.html" class="custom-animation-fourth col">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart p-1"
+          viewBox="0 0 16 16">
+          <path
+            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+        </svg>
+      </a>
     </nav>
   </header>
   <main>
     <!-- Hero Section -->
 
-    <section class="hero">
-      <div class="my-5 row h-75">
-        <div class="col-12 col-lg-6 text-center text-lg-start my-auto px-lg-5">
+    <section class="mb-5">
+      <div class="my-5 row vh-75">
+        <div class="col-12 col-lg-6 text-center text-lg-start my-auto px-lg-5 custom-animation-first">
           <h1 class="fw-bold custom-text-gradient">Buy great automotive art.</h1>
           <p class="mb-5 lead">
             Get your favorite car drawing or illustration for a great price!
@@ -102,12 +100,12 @@
               ">
             Buy Now
           </a>
-          <a href="" class="btn text-primary shadow btn-lg text-uppercase spaced-text mx-4">
+          <a href="" class="btn text-primary shadow btn-lg text-uppercase spaced-text ms-4">
             Explore
           </a>
         </div>
 
-        <div id="carouselExampleIndicators" class="col-12 col-lg-6 carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleIndicators" class="col-12 col-lg-6 carousel slide custom-animation-second" data-bs-ride="carousel">
           <div class="carousel-indicators mb-0">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
               aria-current="true" aria-label="Slide 1"></button>
@@ -250,7 +248,7 @@
           </button>
         </div>
       </div>
-      <a class="d-block text-center" href="#products">
+      <a class="d-block text-center custom-animation-third" href="#products">
         <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="gray"
           class="bi bi-chevron-compact-down rounded-circle shadow p-2" viewBox="0 0 16 16">
           <path fill-rule="evenodd"
@@ -624,7 +622,7 @@
 
   <!-- JS -->
 
-  <script src="js/main.js"></script>
+  <script src="./js/main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>

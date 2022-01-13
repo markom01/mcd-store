@@ -2,9 +2,70 @@
 @import '../../node_modules/bootstrap/scss/variables';
 
 
-:root {
-  scroll-padding: 80px;
+// :root {
+//   scroll-padding: 80px;
+// }
+
+// Animations
+
+
+@keyframes drop {
+  from {
+    opacity: 0;
+    transform: translateY(-5vh);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
+
+@keyframes pop {
+  from {
+    opacity: 0;
+    transform: translateY(5vh);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@for $i from 1 through 4 {
+
+  .custom-animation-first {
+    & > :nth-child(#{$i}) {
+      animation-duration: 1.5s;
+      animation-fill-mode: both;
+      animation-name: drop;
+      animation-delay: $i * 0.5s;
+    }
+  }
+}
+.custom-animation {
+  &-second, 
+  &-third, 
+  &-fourth {
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+  } 
+
+  &-second {
+    animation-name: pop;
+    animation-delay: 2.5s;
+  }
+
+  &-third {
+    animation-name: pop;
+    animation-delay: 3s;
+  }
+  &-fourth {
+    animation-name: drop;
+    animation-delay: 3.5s;
+  }
+}
+
+
 
 .spaced-text {
   letter-spacing: 0.15rem;
@@ -30,6 +91,31 @@ h3 {
   }
 }
 
+.custom-spacer {
+  height: 80px;
+}
+
+.nav-link.custom-nav-link {
+  font-size: 10px;
+
+  @include media-breakpoint-up(md) {
+    font-size: 1rem;
+  }
+}
+
+.navbar.custom-navbar {
+  @include media-breakpoint-up(xxl) {
+    position: relative;
+    background-color: transparent;
+  }
+}
+
+.custom-nav-icon {
+  @include media-breakpoint-up(lg) {
+    display: none;
+  }
+}
+
 .custom-list {
   padding-left: 5px;
 }
@@ -43,6 +129,11 @@ h3 {
   content: "›";
   color: $primary;
   font-size: 1.5rem;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  
+  background: $gradient;
 }
 
 sup {
@@ -67,8 +158,18 @@ select.form-select {
 }
 
 body, 
-.navbar {
+.custom-header,
+.custom-product-nav {
   padding-inline: 5vw;
+}
+
+.custom-product-nav {
+  @include media-breakpoint-up(xxl) {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
 }
 
 .nav {

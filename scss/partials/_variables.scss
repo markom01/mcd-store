@@ -16,7 +16,7 @@ $input-btn-font-size-lg: $font-size-lg !default;
 //Colors
 $primary: hsl(212, 66%, 45%);
 $secondary: hsl(214, 89%, 55%);
-$gradient: linear-gradient(to left, $primary, $secondary);
+$gradient: linear-gradient(90deg, $primary, $secondary);
 $white: hsl(0, 0%, 98%);
 $light: hsl(0, 0%, 92%);
 $black: hsl(0, 0%, 16%);
@@ -42,3 +42,5 @@ $list-group-bg: $light;
 $dropdown-bg: $light;
 
 $form-floating-height: 3.25rem;
+
+$nav-pills-link-active-bg: $gradient;
