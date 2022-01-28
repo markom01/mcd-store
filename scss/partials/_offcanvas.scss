@@ -9,13 +9,13 @@ body {
 
   /* Prevent scroll on narrow devices */
 
-  padding-top: 56px;
+  padding-top: 72px;
 }
 
 @media (max-width: 991.98px) {
-  .offcanvas-collapse {
+  .custom-offcanvas {
     position: fixed;
-    top: 56px;
+    top: 72px;
 
     /* Height of navbar */
     bottom: 0;
@@ -31,6 +31,12 @@ body {
       visibility: visible;
       transform: translateX(-100%);
     }
+
+  }
+
+  .custom-offcanvas-product {
+    position: fixed;
+    top: 130px;
   }
 }
 

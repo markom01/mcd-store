@@ -2,10 +2,6 @@
 @import '../../node_modules/bootstrap/scss/variables';
 
 
-// :root {
-//   scroll-padding: 80px;
-// }
-
 // Animations
 
 
@@ -75,6 +71,16 @@ a {
   text-decoration: none !important;
 }
 
+a.custom-anchor {
+  display: block;
+  position: relative;
+  top: -140px;
+  @include media-breakpoint-up(xxl) {
+    top: -90px;
+  }
+  visibility: hidden;
+}
+
 .custom-text-gradient,
 h1, 
 h2, 
@@ -91,22 +97,33 @@ h3 {
   }
 }
 
-.custom-spacer {
-  height: 80px;
-}
-
 .nav-link.custom-nav-link {
   font-size: 10px;
 
+  @include media-breakpoint-up(sm) {
+    font-size: 0.7rem;
+  }
   @include media-breakpoint-up(md) {
     font-size: 1rem;
   }
+}
+
+.offcanvas-collapse.custom-offcanvas {
+  @include media-breakpoint-up(lg) {
+    box-shadow: none !important;
+  }
+}
+
+.custom-product-nav,
+.navbar.custom-navbar {
+  box-shadow: $top-shadow;
 }
 
 .navbar.custom-navbar {
   @include media-breakpoint-up(xxl) {
     position: relative;
     background-color: transparent;
+    box-shadow: none;
   }
 }
 
@@ -264,7 +281,7 @@ body,
     width: 125px;
     background-color: white;
   
-    @include media-breakpoint-down(lg) {
+    @include media-breakpoint-up(lg) {
       width:200px;
       margin-left: -75px;
     }
