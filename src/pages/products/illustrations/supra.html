@@ -21,15 +21,21 @@
 <!-- Header -->
 
 <body data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="10" class="scrollspy-example position-relative" tabindex="0">
+  
+  <div id="loader">
+    <img id="ellipse" src="../../../images/brand/loader/Ellipse-1.png" alt="Ellipse">
+    <img id="logo" src="../../../images/brand/mcd-store.svg" alt="Loader logo">
+  </div>
+  
   <header class="fixed-top shadow-sm">
     <div id="top"></div>
-    <nav class="navbar navbar-expand-lg navbar-light bg-body py-2 py-md-3 custom-header row row-cols-auto" aria-label="Main navigation">
-      <a class="d-flex align-items-center custom-animation-fourth col ps-0" href="#top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-body py-2 custom-header row row-cols-auto" aria-label="Main navigation">
+      <a class="d-flex align-items-center col ps-0" href="#top">
         <img src="../../../images/brand/mcd-store.svg" class="p-0" width="40" height="40" alt="Logo" />
         <h3 class="ms-md-1 mb-0 d-inline custom-text-hidden">MCD Store</h3>
       </a>
 
-      <button class="custom-toggler navbar-toggler p-1 border-0 custom-animation-fourth col" type="button" id="navbarSideCollapse"
+      <button class="custom-toggler navbar-toggler p-1 border-0 col" type="button" id="navbarSideCollapse"
         aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -38,7 +44,7 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="dropdown-products" data-bs-toggle="dropdown"
               aria-expanded="false">Products</a>
-            <ul class="dropdown-menu shadow border-0 mb-2 mb-lg-0" aria-labelledby="dropdown-products">
+            <ul class="dropdown-menu shadow-sm border-0 mb-2 mb-lg-0" aria-labelledby="dropdown-products">
               <li><a class="dropdown-item" href="#">Wrap Designs</a></li>
               <li><a class="dropdown-item" href="#">Illustrations</a></li>
               <li><a class="dropdown-item" href="#">Sketches</a></li>
@@ -71,7 +77,7 @@
           </div>
         </form>
       </div>
-      <a href="./pages/checkout.html" class="custom-animation-fourth col">
+      <a href="./pages/checkout.html" class="col">
         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart p-1"
           viewBox="0 0 16 16">
           <path
@@ -504,6 +510,18 @@
   <script>
     const tooltips = document.querySelectorAll('.tt')
     tooltips.forEach(t => {new bootstrap.Tooltip(t)})
+  </script>
+
+  <script>
+
+    document.documentElement.onload = function(){
+      document.getElementById("loader").style.display = "block";
+    };
+
+    window.onload = function(){
+      document.getElementById("loader").style.display = "none";
+    };
+
   </script>
 
 </body>

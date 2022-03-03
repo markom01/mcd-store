@@ -1,0 +1,41 @@
+/* Loader */
+
+#loader {
+  height: 100vh;
+  width: 100vw;
+  background: $body-bg;
+}
+
+#ellipse {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  animation: circular 2s linear infinite;
+}
+
+#logo {
+  width: 75px;
+  height: 75px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+@keyframes circular {
+  from {
+    transform:rotate(0deg)
+                translate(-50px);
+  }
+  to {
+    transform:rotate(360deg)
+    translate(-50px);
+  }
+}

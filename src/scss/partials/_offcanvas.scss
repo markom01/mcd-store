@@ -5,21 +5,26 @@ html {
 }
 
 body {
-  overflow-x: hidden;
-
-  /* Prevent scroll on narrow devices */
-
   padding-top: 72px;
 }
 
+.collapse:not(.show) {
+  display: block !important;
+}
+
+@include media-breakpoint-up(lg) {
+  #navClose {
+    display: none;
+  }
+}
+
 @media (max-width: 991.98px) {
+
   .custom-offcanvas {
     position: fixed;
-    top: 72px;
-
-    /* Height of navbar */
-    bottom: 0;
-    left: 100%;
+    top: 0;
+    height: 100vh;
+    right: 100%;
     width: 100%;
     padding-right: 1rem;
     padding-left: 1rem;
@@ -29,18 +34,15 @@ body {
 
     &.open {
       visibility: visible;
-      transform: translateX(-100%);
+      transform: translateX(100%);
     }
 
   }
 
-  .custom-offcanvas-product {
-    position: fixed;
-    top: 130px;
-  }
-}
-
-@media (min-width: 768px) {
+  // .custom-offcanvas-product {
+  //   position: fixed;
+  //   top: 130px;
+  // }
 }
 
 .search-box {
