@@ -47,14 +47,7 @@ module.exports = {
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        use: [
-          // {
-          //   loader: 'file-loader',
-          //   options: {
-          //     name: '[path][name].[ext]',
-          //   },
-          // },
-        ],
+        type: 'asset/resource',
       },
     ]  
   },
@@ -62,6 +55,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./src/pages/index.html",
       filename: "./index.html"
-    })
+    }),
+    // new HtmlWebpackPlugin({
+    //   template: "./src/pages/products/illustrations/supra.html",
+    //   filename: "./supra.html"
+    // })
   ],
 };

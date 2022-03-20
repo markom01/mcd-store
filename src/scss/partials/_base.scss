@@ -4,6 +4,8 @@
 // Fonts
 
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;1,200;1,300;1,400;1,600&display=swap");
+@import url('https://fonts.cdnfonts.com/css/hemi-head-426');
+
 
 // Animations
 
@@ -64,6 +66,10 @@
 
 :root {
   font-family: "Titillium";
+}
+
+h1, h2, h3 {
+  font-family: "Hemi Head FourTwentySix";
 }
 
 .spaced-text {
@@ -259,4 +265,11 @@ body,
   .custom-profile-image {
     margin-left: 0px;
   }
+}
+
+.custom-alert {
+  position: fixed !important;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
 }

@@ -1,21 +1,3 @@
-// Open off-canvas menu on click
-let navToggler = (function () {
-  'use strict'
-
-  document.querySelector('#navbarSideCollapse').addEventListener('click', function () {
-    document.querySelector('.offcanvas-collapse').classList.add('open')
-  })
-})();
-let navClose = (function () {
-  'use strict'
-
-  document.querySelector('#navClose').addEventListener('click', function () {
-    document.querySelector('.offcanvas-collapse').classList.remove('open')
-  })
-})();
-
-export default { navToggler, navClose };
-
 // Example starter JavaScript for disabling form submissions if there are invalid fields
 // (function () {
 //   'use strict'

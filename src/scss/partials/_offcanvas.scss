@@ -8,7 +8,19 @@ body {
   padding-top: 72px;
 }
 
-.collapse:not(.show) {
+.offcanvas-body {
+
+  & img {
+    object-fit: cover;
+    height: 87px;
+  }
+
+  & #cart-total {
+    width: 90%;
+  }
+}
+
+.collapse {
   display: block !important;
 }
 
@@ -18,27 +30,26 @@ body {
   }
 }
 
-@media (max-width: 991.98px) {
 
+@media (max-width: 991.98px) {
+  
   .custom-offcanvas {
     position: fixed;
     top: 0;
+    left: 0;
     height: 100vh;
-    right: 100%;
+    transform: translateX(-100%);
     width: 100%;
     padding-right: 1rem;
     padding-left: 1rem;
     overflow-y: auto;
-    visibility: hidden;
-    transition: transform .3s ease-in-out, visibility .3s ease-in-out;
-
-    &.open {
-      visibility: visible;
-      transform: translateX(100%);
-    }
-
+    transition: .3s ease-in-out;
+    
   }
-
+  .open {
+    transform: translateX(0%);
+  }
+  
   // .custom-offcanvas-product {
   //   position: fixed;
   //   top: 130px;
