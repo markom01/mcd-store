@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+
+    <main>
+      <!-- Hero Section -->
+      <div class="wrapper">
+
+        <section class="mb-5">
+          <div class="my-5 row vh-75">
+            <div
+              class="col-12 col-lg-6 text-center text-lg-start my-auto px-lg-5 custom-animation-first"
+            >
+              <h1 class="fw-bold custom-text-gradient">
+                Buy great automotive art.
+              </h1>
+              <p class="mb-5 lead">
+                Get your favorite car drawing or illustration for a great price!
+              </p>
+              <a
+                href=""
+                class="btn bg-gradient text-white shadow btn-lg fs-6 text-uppercase spaced-text"
+              >
+                Buy Now
+              </a>
+              <a
+                href=""
+                class="btn text-primary shadow btn-lg text-uppercase spaced-text ms-4"
+              >
+                Explore
+              </a>
+            </div>
+  
+            <div
+              id="carouselExampleIndicators"
+              class="col-12 col-lg-6 carousel slide custom-animation-second"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-indicators mb-0">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div class="carousel-inner d-flex h-100"></div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <a class="d-block text-center custom-animation-third" href="#products">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="50"
+              height="50"
+              fill="gray"
+              class="bi bi-chevron-compact-down rounded-circle shadow custom-shadow p-2"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z"
+              />
+            </svg>
+          </a>
+        </section>
+  
+        <!-- Products -->
+  
+        <section class="mb-5">
+          <div id="products"></div>
+          <div class="row">
+            <h2 class="col-5">Products</h2>
+            <a
+              href=""
+              class="btn text-primary col-auto ms-auto d-flex align-items-center justify-content-end shadow"
+            >
+              <h6 class="mb-0 text-grey">Show More</h6>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-chevron-compact-right d-inline"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z"
+                />
+              </svg>
+            </a>
+          </div>
+          <div id="product-cards" class="row justify-content-center row-cols-1 row-cols-lg-2 row-cols-xl-3"></div>
+        </section>
+      </div>
+
+    </main>
+    
+  </body>
+</html>

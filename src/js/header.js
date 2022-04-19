@@ -1,6 +1,6 @@
 import {body, html} from './selectors';
 
-import SiteIconSrc from "../images/brand/mcd-store.svg";
+import SiteIconSrc from "../images/brand/mcd-logo.svg";
 
 // Head
 
@@ -40,7 +40,7 @@ header.innerHTML = `<div id="top"></div>
       height="40"
       alt="Logo"
     />
-    <h3 class="ms-md-1 mb-0 pe-1 d-inline custom-text-hidden">MCD Store</h3>
+    <h2 class="ms-md-1 mb-0 pe-1 pt-1 d-inline custom-text-hidden">STORE</h2>
   </a>
 
   <button class="custom-toggler navbar-toggler p-1 border-0 col order-first" type="button" id="navbarSideCollapse"

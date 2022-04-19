@@ -4,9 +4,12 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   mode: 'development',
-  entry: './src/main.js',
+  entry: {
+    main: './src/main.js',
+    product: './src/js/pages/productPage.js'
+  },
   output: {
-    filename: 'bundle.js',
+    filename: '[name].js',
     path: path.resolve(__dirname, 'dist'),
     clean: true,
     assetModuleFilename: '[path][name].[ext]'
@@ -53,12 +56,16 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./src/pages/index.html",
-      filename: "./index.html"
+      template: "./src/pages/main.html",
+      inject: true,
+      chunks: ['main'],
+      filename: "./main.html"
     }),
-    // new HtmlWebpackPlugin({
-    //   template: "./src/pages/products/illustrations/supra.html",
-    //   filename: "./supra.html"
-    // })
+    new HtmlWebpackPlugin({
+      template: "./src/pages/product.html",
+      inject: true,
+      chunks: ['main'],
+      filename: "./product.html"
+    }),
   ],
 };

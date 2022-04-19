@@ -1,6 +1,6 @@
 import { body } from "./selectors";
 import loaderEllipseSrc from "../images/brand/loader/Ellipse-1.png";
-import loaderLogoSrc from "../images/brand/mcd-store.svg";
+import loaderLogoSrc from "../images/brand/mcd-logo.svg";
 
 
 const loaderElement = document.createElement("div");
@@ -11,7 +11,7 @@ loaderElement.innerHTML = `
   id="ellipse"
   alt="Ellipse"
 />
-<img id="logo" src="src/images/brand/mcd-store.svg" alt="Loader logo" />
+<img id="logo" src="src/images/brand/mcd-logo.svg" alt="Loader logo" />
 `;
 
 function loader() {

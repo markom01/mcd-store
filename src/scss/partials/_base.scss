@@ -186,6 +186,16 @@ select.form-select {
   height: 3.5rem !important;
 }
 
+button {
+  border: 0;
+}
+
+#navigate-back {
+  z-index: 2;
+  left: 25px;
+  width: max-content;
+}
+
 .custom-textarea {
   resize: none;
 }
@@ -197,7 +207,7 @@ img {
 body,
 .custom-header,
 .custom-product-nav {
-  padding-inline: 5vw;
+  padding-inline: 6vw;
 }
 
 .custom-product-nav {
@@ -223,8 +233,21 @@ body,
 }
 
 .custom-card {
-  width: 350px;
+  width: 350px !important;
   max-width: 350px;
+}
+
+.custom-border-radius-bl-tr {
+  border-bottom-left-radius: $border-radius;
+  border-top-right-radius: $border-radius;
+}
+
+.custom-add-to-cart {
+  z-index: 2;
+}
+
+svg, svg * {
+  pointer-events: none;
 }
 
 .pressed {
@@ -272,4 +295,5 @@ body,
   bottom: 50px;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 1046; // offcanvas z-index + 1
 }

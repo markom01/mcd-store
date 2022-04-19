@@ -86,8 +86,10 @@ class="d-flex justify-content-between p-1 m-1 border-top mb-4 mb-md-0"
   href="https://marecardesign.netlify.app"
   target="_blank"
   class="rounded-circle"
+  data-bs-placement="bottom"
+  data-bs-toggle="tooltip" title="Mare Car Design"
 >
-
+  <img src="${FooterLogoSrc}" width="50" height="50" alt="Mare Car Design Logo">
 </a>
 <div class="d-flex flex-column">
   <a
@@ -160,13 +162,5 @@ Made with <span class="custom-text-gradient">&#10084;</span> by
 
 
 body.appendChild(footer);
-
-const MCDLink = document.getElementById("mcd-link");
-const FooterImage = new Image();
-FooterImage.src = FooterLogoSrc;
-FooterImage.setAttribute("width", "50");
-FooterImage.setAttribute("height", "50");
-
-MCDLink.appendChild(FooterImage);
 
 export {footer};

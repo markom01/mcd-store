@@ -1,4 +1,4 @@
-<p align="center"><img src="./images/brand/mcd-store.svg" style="width: 75px;"></p>
+<p align="center"><img src="./images/brand/mcd-logo.svg" style="width: 75px;"></p>
 <h1 align="center">Welcome to MCD Store 👋</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
